@@ -1,0 +1,133 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+/* Components */
+@import "components/top-menu.css";
+
+@import "reset.css";
+
+body {
+  font-family: "Jua", sans-serif;
+  background-color: #f7f7f7;
+  margin: 20px;
+}
+
+.screen-first {
+  width: 300px;
+  height: 600px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0px 20px;
+}
+
+.song-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.song-header__title {
+  font-size: 25px;
+}
+
+.song-header__genre {
+  opacity: 0.6;
+}
+
+.song-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* 셔플,좋아요 메뉴 골격 */
+.song-menu__shuffle,
+.song-menu__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 90px;
+  height: 30px;
+}
+
+.song-menu__shuffle {
+  background-color: black;
+  color: white;
+  margin-right: 10px;
+}
+
+.song-menu__like {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.song-menu__like span:first-child {
+  margin-right: 3px;
+}
+
+.song-menu__like span:last-child {
+  opacity: 0.7;
+}
+
+.music-list img {
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+}
+
+.music-list__column {
+  display: flex;
+  align-items: center;
+}
+
+.music-list-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.music-list__musicion {
+  font-size: 14px;
+  opacity: 0.5;
+  margin-bottom: 5px;
+}
+
+.music {
+  margin-bottom: 170px;
+}
+
+.music-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 0px 13px 15px rgba(0, 0, 0, 0.4);
+}
+
+.music-player__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-player__btn i:nth-child(2) {
+  font-size: 30px;
+  padding: 0px 5px;
+}
+
+.music-player__btn {
+  display: flex;
+  align-items: flex-end;
+}
